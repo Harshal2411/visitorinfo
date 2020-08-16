@@ -9,11 +9,16 @@ import { DatabaseService } from 'src/app/service/database.service';
 export class VisitorlogPage implements OnInit {
   logs:any
   constructor(private databaseService : DatabaseService) { 
+    
+  }
+  ionViewWillEnter(){
+    console.log("enter")
     this.logs = this.databaseService.row_data
     console.log(this.logs)
   }
-
   ngOnInit() {
+    this.logs = this.databaseService.row_data
+    console.log(this.logs)
   }
 
 }

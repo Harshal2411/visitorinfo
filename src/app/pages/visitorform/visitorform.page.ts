@@ -17,11 +17,6 @@ date:any
 
   ngOnInit() {
   }
-  
-
-  
-
-
   submit(form: NgForm ){
   this.databaseService.insert(form, this.date)
   form.reset()
