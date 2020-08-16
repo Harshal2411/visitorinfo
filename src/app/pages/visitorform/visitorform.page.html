@@ -1,0 +1,38 @@
+<ion-content>
+  <div class="vertical-center">
+    <div class="form-wrapper">
+      <form #form="ngForm" (ngSubmit)="submit(form)" method="post">
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input ngModel type="text" name="name"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input ngModel type="text" name="email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Type of visit</ion-label>
+          <ion-select ngModel name="typeofvisit">
+            <ion-select-option value="meeting">Meeting</ion-select-option>
+            <ion-select-option value="delivery">Delivery</ion-select-option>
+            <ion-select-option value="personal">Personal</ion-select-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-input ngModel type="date" name="date" disabled="true"> Date of entry: {{date |date: 'dd/MM/yyyy'}}
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Time to entry</ion-label>
+          <ion-input ngModel type="Time" name="entryTime"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Time to exit</ion-label>
+          <ion-input ngModel type="Time" name="exitTime"></ion-input>
+        </ion-item>
+
+        <ion-button type="submit" style="margin-top:5vh" expand="full" color="primary">Submit</ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

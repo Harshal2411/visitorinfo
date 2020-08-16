@@ -4,7 +4,7 @@
 /** Ionic CSS Variables **/
 :root {
   /** primary **/
-  --ion-color-primary: #3880ff;
+  --ion-color-primary: #C04427;
   --ion-color-primary-rgb: 56, 128, 255;
   --ion-color-primary-contrast: #ffffff;
   --ion-color-primary-contrast-rgb: 255, 255, 255;
@@ -12,7 +12,7 @@
   --ion-color-primary-tint: #4c8dff;
 
   /** secondary **/
-  --ion-color-secondary: #3dc2ff;
+  --ion-color-secondary: #FFF3EB;
   --ion-color-secondary-rgb: 61, 194, 255;
   --ion-color-secondary-contrast: #ffffff;
   --ion-color-secondary-contrast-rgb: 255, 255, 255;
@@ -229,4 +229,18 @@
 
     --ion-card-background: #1e1e1e;
   }
+}
+
+ion-tab-button[aria-selected=true] {
+  background-color: #C04427 !important;
+
+  ion-label{
+    color: white;
+    text-transform: none !important
+    }
+ 
+    
+}
+.item-has-focus{
+  --highlight-background: #C04427 !important;
 }

@@ -1,0 +1,12 @@
+ion-content {
+    .vertical-center {
+      min-height: 100%;
+      display: flex;
+      .form-wrapper {
+        width: 100%;
+        padding: 4vh;
+      }
+    }
+  }
+
+  

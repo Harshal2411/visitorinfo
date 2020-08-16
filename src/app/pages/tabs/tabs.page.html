@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-toolbar color="secondary">
+      <ion-title color="primary">Visitor Info</ion-title>
+      <ion-buttons slot="end">
+        <button (click)="appClose()" style="background-color: var(--ion-color-secondary);font-size:x-large">
+          <ion-icon name="exit-outline" color="primary"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="top" color="secondary" style="height: 6vh;">
+      <ion-tab-button tab="visitorform">
+        <ion-label>Form</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="visitorlog">
+        <ion-label>Logs</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="news">
+        <ion-label>Latest news</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
+</ion-content>
